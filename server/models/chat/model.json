@@ -1,0 +1,40 @@
+{
+  "intents": [
+    {
+      "classes": "phobia",
+      "questions": [""],
+      "answers": [],
+      "custom_switch": ""
+    },
+    {
+      "classes": "anxiety",
+      "questions": [],
+      "answers": [],
+      "custom_switch": ""
+    },
+    {
+      "classes": "addiction",
+      "questions": [],
+      "answers": [],
+      "custom_switch": ""
+    },
+    {
+      "classes": "depression",
+      "questions": [],
+      "answers": [],
+      "custom_switch": ""
+    },
+    {
+      "classes": "phobia",
+      "questions": [],
+      "answers": [],
+      "custom_switch": ""
+    },
+    {
+      "classes": "misogynism",
+      "questions": [],
+      "answers": [],
+      "custom_switch": ""
+    }
+  ]
+}
