@@ -404,11 +404,57 @@ export default function Home() {
     {
       id: "afraid_of",
       options: [
-        { value: "Not at all", label: "Not at all", trigger: "final" },
-        { value: "Several days", label: "Several days", trigger: "final" },
+        { value: "Not at all", label: "Not at all", trigger: "wall" },
+        { value: "Several days", label: "Several days", trigger: "wall" },
         {
           value: "More than half the days",
           label: "More than half the days",
+          trigger: "wall"
+        }
+      ]
+    },
+
+    {
+      id: "wall",
+      message: "Have you been bothered by worrying about any of the following?",
+      trigger: "finals"
+    },
+    {
+      id: "finals",
+      options: [
+        {
+          value: "Your weight or how you look,",
+          label: "weight",
+          trigger: "done"
+        },
+        {
+          value: "Little or no sexual desire or pleasure during sex",
+          label: "Several days",
+          trigger: "done"
+        },
+        {
+          value: "Difficulties with your partner",
+          label: "partner",
+          trigger: "final"
+        },
+        {
+          value: "The stress of taking care of family members",
+          label: "stress",
+          trigger: "final"
+        },
+        {
+          value: "Stress at work, school or outside home",
+          label: "work",
+          trigger: "final"
+        },
+        {
+          value: "By financial problems or worries",
+          label: "financial",
+          trigger: "final"
+        },
+        {
+          value: "Having no one to turn to",
+          label: "turn",
           trigger: "final"
         }
       ]
@@ -503,12 +549,48 @@ class Form extends React.Component {
       afraid_of
     });
   }
+
   render() {
     return (
       <div>
-        <span>{this.state.differents.value}</span>
-        <span>{this.state.age.value}</span>
-        <span>{this.state.nervouss.value}</span>
+        <div>
+          <div>Your Responses</div>
+          <span>{this.state.name.value}</span> <br />
+          <span>{this.state.pleasures.value}</span> <br />
+          <span>{this.state.sleeps.value}</span> <br />
+          <span>{this.state.energies.value}</span> <br />
+          <span>{this.state.appetites.value}</span> <br />
+          <span>{this.state.failures.value}</span> <br />
+          <span>{this.state.concentratings.value}</span> <br />
+          <span>{this.state.fidgetys.value}</span> <br />
+          <span>{this.state.anxious.value}</span> <br />
+          <span>{this.state.nervouss.value}</span> <br />
+          <span>{this.state.differents.value}</span> <br />
+          <span>{this.state.relaxatio.value}</span> <br />
+          <span>{this.state.stills.value}</span> <br />
+          <span>{this.state.irritated.value}</span> <br />
+          <span>{this.state.afraid_of.value}</span> <br />
+          <button
+            onClick={() => {
+              const not = "not at all";
+              const several = "Several days";
+              const more = "More than half the days";
+              //   if(this.state.name.values === not || this.state.pleasures.value === not || this.state.sleeps.value === not || this.state.energies.value === not || this.state.appetites.value === not || this.state.failures.value === not || this.state.concentratings.value === not || this.state.fidgetys.value === not  || this.state.anxious.value === not || this.state.nervouss.value === not || this.state.differents.value === not || this.state.relaxatio.value === not || this.state.stills.value === not || this.state.irritated.value === not || this.state.afraid_of.value === not ){
+              //             not_count++;
+              //  }
+              //  if(this.state.name.values === several || this.state.pleasures.value === several || this.state.sleeps.value === several || this.state.energies.value === several || this.state.appetites.value === several || this.state.failures.value === several || this.state.concentratings.value === several || this.state.fidgetys.value === several  || this.state.anxious.value === several || this.state.nervouss.value === several || this.state.differents.value === several || this.state.relaxatio.value === several || this.state.stills.value === several || this.state.irritated.value === several || this.state.afraid_of.value === several ){
+              //     several_count++;
+              // }
+              // if(this.state.name.values === several || this.state.pleasures.value === several || this.state.sleeps.value === several || this.state.energies.value === several || this.state.appetites.value === several || this.state.failures.value === several || this.state.concentratings.value === several || this.state.fidgetys.value === several  || this.state.anxious.value === several || this.state.nervouss.value === several || this.state.differents.value === several || this.state.relaxatio.value === several || this.state.stills.value === several || this.state.irritated.value === several || this.state.afraid_of.value === several ){
+              //     several_count++;
+              // }
+
+              // if
+            }}
+          >
+            Check Your Stats
+          </button>
+        </div>
       </div>
     );
   }
