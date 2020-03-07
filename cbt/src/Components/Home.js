@@ -425,12 +425,12 @@ export default function Home() {
         {
           value: "Your weight or how you look,",
           label: "weight",
-          trigger: "done"
+          trigger: "final"
         },
         {
           value: "Little or no sexual desire or pleasure during sex",
           label: "Several days",
-          trigger: "done"
+          trigger: "final"
         },
         {
           value: "Difficulties with your partner",
