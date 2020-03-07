@@ -124,7 +124,13 @@ export default function Home() {
           value: "More than half the days",
           label: "More than half the days",
           trigger: "pleasure"
+        },
+        {
+          value: "Nearly every day",
+          label: "Nearly every day",
+          trigger: "pleasure"
         }
+
       ]
     },
     {
@@ -141,6 +147,11 @@ export default function Home() {
         {
           value: "More than half the days",
           label: "More than half the days",
+          trigger: "sleep"
+        },
+        {
+          value: "Nearly every day",
+          label: "Nearly every day",
           trigger: "sleep"
         }
       ]
@@ -160,6 +171,11 @@ export default function Home() {
         {
           value: "More than half the days",
           label: "More than half the days",
+          trigger: "energy"
+        },
+        {
+          value: "Nearly every day",
+          label: "Nearly every day",
           trigger: "energy"
         }
       ]
@@ -181,6 +197,11 @@ export default function Home() {
           value: "More than half the days",
           label: "More than half the days",
           trigger: "appetite"
+        },
+        {
+          value: "Nearly every day",
+          label: "Nearly every day",
+          trigger: "appetite"
         }
       ]
     },
@@ -198,6 +219,11 @@ export default function Home() {
         {
           value: "More than half the days",
           label: "More than half the days",
+          trigger: "failure"
+        },
+        {
+          value: "Nearly every day",
+          label: "Nearly every day",
           trigger: "failure"
         }
       ]
@@ -222,6 +248,11 @@ export default function Home() {
           value: "More than half the days",
           label: "More than half the days",
           trigger: "concentrating"
+        },
+        {
+          value: "Nearly every day",
+          label: "Nearly every day",
+          trigger: "concentrating"
         }
       ]
     },
@@ -237,7 +268,12 @@ export default function Home() {
       options: [
         { value: "Not at all", label: "Not at all", trigger: "fidgety" },
         { value: "Several days", label: "Several days", trigger: "fidgety" },
-        { value: "More than half the days", label: "More than half the days" }
+        { value: "More than half the days", label: "More than half the days",trigger:"fidgety"},
+        {
+          value: "Nearly every day",
+          label: "Nearly every day",
+          trigger: "fidgety"
+        }
       ]
     },
 
@@ -256,6 +292,11 @@ export default function Home() {
         {
           value: "More than half the days",
           label: "More than half the days",
+          trigger: "anxiety"
+        },
+        {
+          value: "Nearly every day",
+          label: "Nearly every day",
           trigger: "anxiety"
         }
       ]
@@ -291,6 +332,11 @@ export default function Home() {
           value: "More than half the days",
           label: "More than half the days",
           trigger: "worrying"
+        },
+        {
+          value: "Nearly every day",
+          label: "Nearly every day",
+          trigger: "worrying"
         }
       ]
     },
@@ -310,6 +356,11 @@ export default function Home() {
         {
           value: "More than half the days",
           label: "More than half the days",
+          trigger: "different"
+        },
+        {
+          value: "Nearly every day",
+          label: "Nearly every day",
           trigger: "different"
         }
       ]
@@ -332,6 +383,11 @@ export default function Home() {
           value: "More than half the days",
           label: "More than half the days",
           trigger: "relaxing"
+        },
+        {
+          value: "Nearly every day",
+          label: "Nearly every day",
+          trigger: "stills"
         }
       ]
     },
@@ -352,6 +408,11 @@ export default function Home() {
           value: "More than half the days",
           label: "More than half the days",
           trigger: "stills"
+        },
+        {
+          value: "Nearly every day",
+          label: "Nearly every day",
+          trigger: "stills"
         }
       ]
     },
@@ -370,6 +431,11 @@ export default function Home() {
         {
           value: "More than half the days",
           label: "More than half the days",
+          trigger: "irritated"
+        },
+        {
+          value: "Nearly every day",
+          label: "Nearly every day",
           trigger: "irritated"
         }
       ]
@@ -392,6 +458,11 @@ export default function Home() {
           value: "More than half the days",
           label: "More than half the days",
           trigger: "afraid_of"
+        },
+        {
+          value: "Nearly every day",
+          label: "Nearly every day",
+          trigger: "afraid_of"
         }
       ]
     },
@@ -409,6 +480,11 @@ export default function Home() {
         {
           value: "More than half the days",
           label: "More than half the days",
+          trigger: "wall"
+        },
+        {
+          value: "Nearly every day",
+          label: "Nearly every day",
           trigger: "wall"
         }
       ]
@@ -575,6 +651,7 @@ class Form extends React.Component {
               const not = "not at all";
               const several = "Several days";
               const more = "More than half the days";
+              const nearly = "Nearly every day";
               //   if(this.state.name.values === not || this.state.pleasures.value === not || this.state.sleeps.value === not || this.state.energies.value === not || this.state.appetites.value === not || this.state.failures.value === not || this.state.concentratings.value === not || this.state.fidgetys.value === not  || this.state.anxious.value === not || this.state.nervouss.value === not || this.state.differents.value === not || this.state.relaxatio.value === not || this.state.stills.value === not || this.state.irritated.value === not || this.state.afraid_of.value === not ){
               //             not_count++;
               //  }
