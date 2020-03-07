@@ -14,7 +14,22 @@ def Home():
     data = request.get_json()
     data = data['msg']
     output = RestServerreply(data)
-    return jsonify(output)
+    classs = output['final']
+    questions = output['res']
+    answer = output['answers']
+
+    final = {
+        "classes": classs,
+        "related": questions,
+        "answer": answer
+    }
+
+    return jsonify(final)
+
+
+@app.route('/Home', methods=['GET'])
+def Home():
+    return "Test rest api"
 
 
 if __name__ == "__main__":

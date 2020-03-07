@@ -113,6 +113,11 @@ def RestServerreply(input_value):
 
     for tg in data["intents"]:
         if tg['classes'] == tag:
+            dta = tg['classes']
+            response_questions = tg['questions']
             responses = tg['answers']
 
-    print(random.choice(responses))
+    final = dta
+    answer = random.choice(responses)
+    dicts = {"final": final, "res": response_questions, "answers": answer}
+    return dicts

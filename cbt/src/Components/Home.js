@@ -3,6 +3,7 @@ import { context } from "./Context/context";
 import Styled from "styled-components";
 import random from "randomstring";
 import PropTypes from "prop-types";
+import { ThemeConsumer, ThemeProvider } from "styled-components";
 
 import ChatBot from "react-simple-chatbot";
 export default function Home() {
@@ -10,6 +11,19 @@ export default function Home() {
   const [data, setData] = useState();
   const contexts = useContext(context);
 
+  const theme = {
+    background: "#f5f8fb",
+    fontFamily: "Helvetica Neue",
+    headerBgColor: "#EF6C00",
+    headerFontColor: "#fff",
+    headerFontSize: "15px",
+    botBubbleColor: "#EF6C00",
+    botFontColor: "#fff",
+    userBubbleColor: "#fff",
+    userFontColor: "#4a4a4a",
+    width: "100vw",
+    height: "100vh"
+  };
   const steps = [
     {
       id: "1",
@@ -130,7 +144,6 @@ export default function Home() {
           label: "Nearly every day",
           trigger: "pleasure"
         }
-
       ]
     },
     {
@@ -268,7 +281,11 @@ export default function Home() {
       options: [
         { value: "Not at all", label: "Not at all", trigger: "fidgety" },
         { value: "Several days", label: "Several days", trigger: "fidgety" },
-        { value: "More than half the days", label: "More than half the days",trigger:"fidgety"},
+        {
+          value: "More than half the days",
+          label: "More than half the days",
+          trigger: "fidgety"
+        },
         {
           value: "Nearly every day",
           label: "Nearly every day",
@@ -407,12 +424,12 @@ export default function Home() {
         {
           value: "More than half the days",
           label: "More than half the days",
-          trigger: "stills"
+          trigger: "still"
         },
         {
           value: "Nearly every day",
           label: "Nearly every day",
-          trigger: "stills"
+          trigger: "still"
         }
       ]
     },
@@ -544,8 +561,16 @@ export default function Home() {
     }
   ];
   return (
-    <div>
-      <ChatBot steps={steps} />
+    <div
+      className="style"
+      style={{
+        width: "100vw",
+        height: "100vh"
+      }}
+    >
+      <ThemeProvider theme={theme}>
+        <ChatBot speechSynthesis={{ enable: true, lang: "en" }} steps={steps} />
+      </ThemeProvider>
     </div>
   );
 }
@@ -576,7 +601,11 @@ class Form extends React.Component {
       relaxatio: "",
       stills: "",
       irritated: "",
-      afraid_of: ""
+      afraid_of: "",
+      half_count: 0,
+      nearly: 0,
+      not_count: 0,
+      every_count: 0
     };
   }
   componentWillMount() {
@@ -624,6 +653,151 @@ class Form extends React.Component {
       irritated,
       afraid_of
     });
+    const not = "Not at all";
+    const several = "Several days";
+    const more = "More than half the days";
+    const nearly = "Nearly every day";
+    let negative_count = 0;
+    let several_count = 0;
+    let half_count = 0;
+    let every_count = 0;
+    // 1
+    if (this.state.pleasures == not) {
+      negative_count++;
+    } else if (this.state.pleasures === several) {
+      several_count++;
+    } else if (this.state.pleasures == more) {
+      half_count++;
+    } else {
+      every_count++;
+    }
+    // 2
+    if (this.state.sleeps == not) {
+      negative_count++;
+    } else if (this.state.sleeps === several) {
+      several_count++;
+    } else if (this.state.sleeps == more) {
+      half_count++;
+    } else {
+      every_count++;
+    }
+
+    if (this.state.energies == not) {
+      negative_count++;
+    } else if (this.state.energies === several) {
+      several_count++;
+    } else if (this.state.energies == more) {
+      half_count++;
+    } else {
+      every_count++;
+    }
+
+    if (this.state.appetites == not) {
+      negative_count++;
+    } else if (this.state.appetites === several) {
+      several_count++;
+    } else if (this.state.appetites == more) {
+      half_count++;
+    } else {
+      every_count++;
+    }
+
+    if (this.state.failures == not) {
+      negative_count++;
+    } else if (this.state.failures === several) {
+      several_count++;
+    } else if (this.state.failures == more) {
+      half_count++;
+    } else {
+      every_count++;
+    }
+
+    if (this.state.concentratings == not) {
+      negative_count++;
+    } else if (this.state.concentratings === several) {
+      several_count++;
+    } else if (this.state.concentratings == more) {
+      half_count++;
+    } else {
+      every_count++;
+    }
+
+    if (this.state.fidgetys == not) {
+      negative_count++;
+    } else if (this.state.fidgetys === several) {
+      several_count++;
+    } else if (this.state.fidgetys == more) {
+      half_count++;
+    } else {
+      every_count++;
+    }
+
+    if (this.state.anxious == not) {
+      negative_count++;
+    } else if (this.state.pleasures === several) {
+      several_count++;
+    } else if (this.state.pleasures == more) {
+      half_count++;
+    } else {
+      every_count++;
+    }
+
+    if (this.state.nervouss == not) {
+      negative_count++;
+    } else if (this.state.pleasures === several) {
+      several_count++;
+    } else if (this.state.pleasures == more) {
+      half_count++;
+    } else {
+      every_count++;
+    }
+
+    if (this.state.differents == not) {
+      negative_count++;
+    } else if (this.state.differents === several) {
+      several_count++;
+    } else if (this.state.differents == more) {
+      half_count++;
+    } else {
+      every_count++;
+    }
+
+    if (this.state.stills == not) {
+      negative_count++;
+    } else if (this.state.stills === several) {
+      several_count++;
+    } else if (this.state.stills == more) {
+      half_count++;
+    } else {
+      every_count++;
+    }
+
+    if (this.state.irritated == not) {
+      negative_count++;
+    } else if (this.state.irritated === several) {
+      several_count++;
+    } else if (this.state.irritated == more) {
+      half_count++;
+    } else {
+      every_count++;
+    }
+
+    if (this.state.afraid_of == not) {
+      negative_count++;
+    } else if (this.state.afraid_of === several) {
+      several_count++;
+    } else if (this.state.afraid_of == more) {
+      half_count++;
+    } else {
+      every_count++;
+    }
+
+    this.setState({
+      negative_count,
+      several_count,
+      half_count,
+      every_count
+    });
   }
 
   render() {
@@ -642,16 +816,37 @@ class Form extends React.Component {
           <span>{this.state.anxious.value}</span> <br />
           <span>{this.state.nervouss.value}</span> <br />
           <span>{this.state.differents.value}</span> <br />
-          <span>{this.state.relaxatio.value}</span> <br />
+          {/* <span>{this.state.relaxatio.value}</span> <br /> */}
           <span>{this.state.stills.value}</span> <br />
           <span>{this.state.irritated.value}</span> <br />
           <span>{this.state.afraid_of.value}</span> <br />
+          <span>
+            The Count is positive for {this.state.negative_count.value}
+          </span>{" "}
+          <br />
+          <span>
+            The Count is positive for {this.state.several_count.value}
+          </span>{" "}
+          <br />
+          <span>
+            The Count is positive for {this.state.half_count.value}
+          </span>{" "}
+          <br />
+          <span>The Count is positive for {this.state.nearly.value}</span>{" "}
+          <br />
+          <div>
+            Result: Based on your responses to questions 1-8, you are
+            experiencing some symptoms seen in depression but only an
+            experienced health professional can tell for sure.
+          </div>
+          <div>
+            Result on Anxiety: Anxiety or panic attacks aren't harmful but they
+            can be frightening. See useful links for more information that may
+            help. See Generalised anxiety disorder for more information.
+          </div>
           <button
+            style={{ color: "yellow", padding: "10%" }}
             onClick={() => {
-              const not = "not at all";
-              const several = "Several days";
-              const more = "More than half the days";
-              const nearly = "Nearly every day";
               //   if(this.state.name.values === not || this.state.pleasures.value === not || this.state.sleeps.value === not || this.state.energies.value === not || this.state.appetites.value === not || this.state.failures.value === not || this.state.concentratings.value === not || this.state.fidgetys.value === not  || this.state.anxious.value === not || this.state.nervouss.value === not || this.state.differents.value === not || this.state.relaxatio.value === not || this.state.stills.value === not || this.state.irritated.value === not || this.state.afraid_of.value === not ){
               //             not_count++;
               //  }
@@ -661,11 +856,14 @@ class Form extends React.Component {
               // if(this.state.name.values === several || this.state.pleasures.value === several || this.state.sleeps.value === several || this.state.energies.value === several || this.state.appetites.value === several || this.state.failures.value === several || this.state.concentratings.value === several || this.state.fidgetys.value === several  || this.state.anxious.value === several || this.state.nervouss.value === several || this.state.differents.value === several || this.state.relaxatio.value === several || this.state.stills.value === several || this.state.irritated.value === several || this.state.afraid_of.value === several ){
               //     several_count++;
               // }
-
               // if
+              this.props.history.push("/Intense");
             }}
           >
-            Check Your Stats
+            Store Your Details
+          </button>
+          <button>
+            Please Go for a intense test so that we can more help you
           </button>
         </div>
       </div>

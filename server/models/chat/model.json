@@ -22,7 +22,22 @@
         "If a person has a negative opinion of me, what impact will that actually have on my day to day life?",
         "When was the last time I felt this fear? Will I be able to handle this situation differently than the last time I felt this specific fear?"
       ],
-      "answers": [],
+      "answers": [
+        "Talking treatments, such as counselling,are often very effective at treating phobias",
+        "CBT is a type of counselling that can help you manage your problems by changing the way you think and behave.",
+        "attend a self-help group",
+        "use exposure therapy to overcome your fear",
+        "exercise regularly",
+        "eating regular, healthy meals",
+        "get enough sleep",
+        "you can try relaxation techniques – a series of physical exercises that help you relax and control your breathing",
+        "you can try visualisation – combines relaxation and breathing techniques with mentally visualising how you'll successfully deal with a situation that could cause anxiety",
+        "I think the best treatment for is a form of psychotherapy called exposure therapy ",
+        "you should try exposure therapy will help to reduce specific phobia and the thoughts, feelings , and sensations may help you learn to manage your anxiety.",
+        "I prefer you should do deep breathing, progressive muscle relaxation or yoga , which may help you to cope up with anxiety and stress",
+        "you should do physical activity and exercise may be helpful in managing anxiety",
+        " I think you should get enough rest, eat healthily and try to be physically active every day"
+      ],
       "custom_switch": ""
     },
     {
@@ -36,7 +51,17 @@
         "Do you ever avoid places or social situations for fear of this panic?",
         "Do you ever engage in repetitive behaviors to manage your worry? (i.e. checking the oven is off, locking doors, washing hands, counting, repeating words)"
       ],
-      "answers": [],
+      "answers": [
+        "note how often you check your body, ask people for reassurance, or look at health information",
+        "You should practice yoga, listen to music, meditate, get a massage, or learn relaxation techniques",
+        "Keep Stepping back from the problem helps clear your head",
+        " I think you should do not skip any meals do keep healthful,energy-boosting snacks on hand",
+        "Please do exercise daily to help you feel good and maintain your health",
+        "you should Take deep breaths Inhale and exhale slowly",
+        " You should maintain a positive attitude Make an effort to replace negative thoughts with positive ones",
+        "Be patient when you start a new exercise program",
+        "Try to Distract yourself with an iPod or other portable media player and listen to music"
+      ],
       "custom_switch": ""
     },
     {
@@ -63,7 +88,15 @@
         "Have you previously gotten help through treatment for drug or alcohol abuse?",
         "Have you experienced medical issues brought on by drug or alcohol use?"
       ],
-      "answers": [],
+      "answers": [
+        "Take time to contact friends and family who will support you in your goals without being judgmental if times become hard and you slip up. ",
+        " it is a good idea to talk to your doctor or local drug clinic about whether you need medical help in quitting",
+        "Remind yourself of the reasons you want to change.",
+        "Think about your past attempts at recovery, if any. What worked? What didn’t?",
+        "Set specific, measurable goals, such as a start date or limits on your drug use.",
+        "Remove reminders of your addiction from your home, workplace, and other places you frequent",
+        "Tell friends and family that you’re committing to recovery, and ask for their support."
+      ],
       "custom_switch": ""
     },
     {
@@ -88,7 +121,20 @@
         "Are you experiencing physical symptoms like headaches, insomnia, or digestive issues?",
         "Do you have people you can talk to who understand what you’re going through?"
       ],
-      "answers": [],
+      "answers": [
+        "control the negative thoughts that lead to loss of interest and feelings of worthlessness",
+        "build new friendships and improve your support network.",
+        "Look for support from people who make you feel safe and cared for.",
+        "While nothing can replace the human connection, pets can bring joy and companionship into your life and help you feel less isolated",
+        "Help someone else by volunteering",
+        "Have lunch or coffee with a friend",
+        "Accompany someone to the movies, a concert, or a small get-together",
+        "Call or email an old friend",
+        "Go for a walk with a workout buddy",
+        "Schedule a weekly dinner date",
+        "Meet new people by taking a class or joining a club",
+        "Confide in a clergy member, teacher, or sports coach"
+      ],
       "custom_switch": ""
     }
   ]
