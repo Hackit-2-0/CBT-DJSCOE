@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import template from "./template";
 import Selection from "./selection";
 import Dashboard from "./Dashboard";
@@ -8,11 +8,11 @@ import dataProcessing, {
   renewableEnergyData,
   biomassData
 } from "./dataprocessing";
-import { Menu , Input } from 'semantic-ui-react'
+import { Menu, Input } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
 
 export default class content extends Component {
-    state = template;
+  state = template;
 
   copyDataSeries = (obj = {}) => {
     this.setState({
@@ -56,46 +56,51 @@ export default class content extends Component {
     });
   };
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-  
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+
   render() {
     const { activeItem } = this.state;
     return (
       <>
         <Menu stackable>
-        <Menu.Item>
-          <img src='https://react.semantic-ui.com/logo.png' />
-        </Menu.Item>
+          <Menu.Item>
+            <img src="https://react.semantic-ui.com/logo.png" />
+          </Menu.Item>
 
-        <Menu.Item
-          name='features'
-          active={activeItem === 'features'}
-          onClick={this.handleItemClick}
-        >
-          Features
-        </Menu.Item>
+          <Menu.Item
+            name="features"
+            active={activeItem === "features"}
+            onClick={this.handleItemClick}
+          >
+            Features
+          </Menu.Item>
 
-        <Menu.Item
-          name='testimonials'
-          active={activeItem === 'testimonials'}
-          onClick={this.handleItemClick}
-        >
-          Testimonials
-        </Menu.Item>
+          <Menu.Item
+            name="testimonials"
+            active={activeItem === "testimonials"}
+            onClick={this.handleItemClick}
+          >
+            Testimonials
+          </Menu.Item>
 
-        <Menu.Item
-          name='sign-in'
-          active={activeItem === 'sign-in'}
-          onClick={this.handleItemClick}
-        >
-          Sign-in
-        </Menu.Item>
-        <Input  size='large' style = {searchStyle} icon='search' placeholder='Search...' />
-      </Menu>
-      {/* graph */}
+          <Menu.Item
+            name="sign-in"
+            active={activeItem === "sign-in"}
+            onClick={this.handleItemClick}
+          >
+            Sign-in
+          </Menu.Item>
+          <Input
+            size="large"
+            style={searchStyle}
+            icon="search"
+            placeholder="Search..."
+          />
+        </Menu>
+        {/* graph */}
         <div className="container bg-light">
           <h1 className="text-center mt-5">
-            National institute of mental health 
+            National institute of mental health
           </h1>
           <p className="text-center">
             Source:&nbsp;
@@ -130,8 +135,8 @@ export default class content extends Component {
 }
 
 const searchStyle = {
-    float:'right',
-    marginLeft:'auto',
-    fontSize:'15px',
-    fontWeight:'Bold'
-}
+  float: "right",
+  marginLeft: "auto",
+  fontSize: "15px",
+  fontWeight: "Bold"
+};
