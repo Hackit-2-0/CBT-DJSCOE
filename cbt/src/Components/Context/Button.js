@@ -1,16 +1,17 @@
 import React from "react";
 
 const buttonStyles = {
-  padding: "16px 24px",
-  background: "whitesmoke",
+  display: "inline-block",
+  padding: "8px 20px",
+  background: "rgba(255,136,0,0.8)",
   cursor: "pointer",
   border: "none",
-  borderRadius: 2,
+  borderRadius: 5,
   outline: "none",
-  color: "blue",
-  background: "black",
   marginTop: "10px",
-  width: "420px"
+  width: "420px",
+  fontWeight: "500px",
+  color: "#fffff"
 };
 
 const Button = ({ children, onClick }) => (

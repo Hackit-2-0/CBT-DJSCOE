@@ -2,7 +2,7 @@ import React from "react";
 
 const cardStyles = {
   borderRadius: 3,
-  width: "350px",
+  width: "420px",
   height: "250px",
   cursor: "pointer",
   userSelect: "none",
@@ -13,7 +13,9 @@ const cardStyles = {
   top: 0,
   border: "1px solid #333",
   borderRadius: "2.5px",
-  background: "green"
+  background: "rgba(34,124,226,1)",
+  color: "#fff",
+  boxShadow: "2px 2px 5px 2px #000"
 };
 
 const Card = ({ zIndex = 0, children }) => (

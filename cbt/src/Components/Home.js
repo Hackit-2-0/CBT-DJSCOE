@@ -2,9 +2,13 @@ import React, { useContext, useState, useRef } from "react";
 import { context } from "./Context/context";
 import Styled from "styled-components";
 import PropTypes from "prop-types";
+import Logo from "./data/chat.png";
 import { ThemeConsumer, ThemeProvider } from "styled-components";
 
+import { Container, Grid, Segment, Progress, Divider } from "semantic-ui-react";
+
 import ChatBot from "react-simple-chatbot";
+import Navbar from "./Navbar";
 export default function Home() {
   let [count, setCount] = useState();
   const [data, setData] = useState();
@@ -13,11 +17,11 @@ export default function Home() {
   const theme = {
     background: "#f5f8fb",
     fontFamily: "Helvetica Neue",
-    headerBgColor: "#EF6C00",
+    headerBgColor: "rgba(34,124,226,1)",
     headerFontColor: "#fff",
     headerFontSize: "15px",
     botBubbleColor: "#EF6C00",
-    botFontColor: "#fff",
+    botFontColor: "#ffff",
     userBubbleColor: "#fff",
     userFontColor: "#4a4a4a",
     width: "100vw",
@@ -516,37 +520,37 @@ export default function Home() {
       options: [
         {
           value: "Your weight or how you look,",
-          label: "weight",
+          label: "weight_looks",
           trigger: "final"
         },
         {
           value: "Little or no sexual desire or pleasure during sex",
-          label: "Several days",
+          label: "sexual_desire",
           trigger: "final"
         },
         {
           value: "Difficulties with your partner",
-          label: "partner",
+          label: "partner_difficulty",
           trigger: "final"
         },
         {
           value: "The stress of taking care of family members",
-          label: "stress",
+          label: "family_stress",
           trigger: "final"
         },
         {
           value: "Stress at work, school or outside home",
-          label: "work",
+          label: "work_stress",
           trigger: "final"
         },
         {
           value: "By financial problems or worries",
-          label: "financial",
+          label: "financial_problem",
           trigger: "final"
         },
         {
           value: "Having no one to turn to",
-          label: "turn",
+          label: "loneliness",
           trigger: "final"
         }
       ]
@@ -568,7 +572,24 @@ export default function Home() {
       }}
     >
       <ThemeProvider theme={theme}>
-        <ChatBot speechSynthesis={{ enable: true, lang: "en" }} steps={steps} />
+        <Navbar />
+        <Container>
+          <Grid>
+            <Grid.Row>
+              <Grid.Column width={8}>
+                <ChatBot
+                  speechSynthesis={{ enable: true, lang: "en" }}
+                  steps={steps}
+                />
+              </Grid.Column>
+              <Grid.Column width={8}>
+                <img src={Logo} />
+                <Segment>This is a assesment and diagnostic test</Segment>
+              </Grid.Column>
+            </Grid.Row>
+            <Divider vertical>More Info</Divider>
+          </Grid>
+        </Container>
       </ThemeProvider>
     </div>
   );
@@ -604,7 +625,8 @@ class Form extends React.Component {
       half_count: 0,
       nearly: 0,
       not_count: 0,
-      every_count: 0
+      every_count: 0,
+      finals: ""
     };
   }
   componentWillMount() {
@@ -628,7 +650,14 @@ class Form extends React.Component {
       relaxatio,
       stills,
       irritated,
-      afraid_of
+      afraid_of,
+      weight_looks,
+      sexual_desire,
+      partner_difficulty,
+      family_stress,
+      work_stress,
+      financial_problem,
+      loneliness
     } = steps;
 
     this.setState({
@@ -650,7 +679,15 @@ class Form extends React.Component {
       relaxatio,
       stills,
       irritated,
-      afraid_of
+      afraid_of,
+
+      weight_looks,
+      sexual_desire,
+      partner_difficulty,
+      family_stress,
+      work_stress,
+      financial_problem,
+      loneliness
     });
     const not = "Not at all";
     const several = "Several days";
@@ -816,9 +853,10 @@ class Form extends React.Component {
           <span>{this.state.nervouss.value}</span> <br />
           <span>{this.state.differents.value}</span> <br />
           {/* <span>{this.state.relaxatio.value}</span> <br /> */}
-          <span>{this.state.stills.value}</span> <br />
+          {/* <span>{this.state.stills.value}</span> <br />
           <span>{this.state.irritated.value}</span> <br />
-          <span>{this.state.afraid_of.value}</span> <br />
+          */}{" "}
+          */}
           <span>
             The Count is positive for {this.state.negative_count.value}
           </span>{" "}
@@ -865,6 +903,79 @@ class Form extends React.Component {
             Please Go for a intense test so that we can more help you
           </button>
         </div>
+        <br />
+        <br />
+        {/* weight_looks, sexual_desire, partner_difficulty, family_stress, */}
+        {/* work_stress, financial_problem, loneliness, */}
+        <b>The solution for you</b>
+
+        {this.state.finals == "weight_looks" ? (
+          <span>
+            Be active, do exercise,Take control - the act of taking control is
+            in itself empowering,Connect with people,Have some 'me time',Avoid
+            unhealthy habits,Help other people,Work smarter not harder,Try to be
+            positive,Accept the things you can't change
+          </span>
+        ) : null}
+        {this.state.finals == "sexual_desire" ? (
+          <span>
+            [a GP – they may be able to offer some helpful advice, or refer you
+            to a specialist for an assessment and treatment,a psychosexual
+            therapist]
+          </span>
+        ) : null}
+
+        {
+          (this.state.finals = "partner_difficulty" ? (
+            <span>
+              [A combination of a psychological therapy and medication may be
+              recommended if you have severe or persistent PTSD.,You can
+              confront your traumatic memories by thinking about your experience
+              in detail,Group therapy can help you find ways to manage your
+              symptoms and understand the condition.]
+            </span>
+          ) : null)
+        }
+
+        {this.state.finals == "family_stress" ? (
+          <span>
+            [If the stress of caregiving is left unchecked, it can take a toll
+            on your health, relationships, and state of mind,Be prepared with a
+            list of ways that others can help you, and let the helper choose
+            what he or she would like to do,It's normal to feel guilty
+            sometimes, but understand that no one is a "perfect" caregiver.
+            ,Break large tasks into smaller steps that you can do one at a
+            time,Balancing Work and Family,Focus on what you are able to
+            provide,Set realistic goals,Get connected to your family,Join a
+            support group,Seek social support,Set personal health goals.]
+          </span>
+        ) : null}
+
+        {this.state.finals == "work_stress" ? (
+          <span>
+            [Be active, do exercise,Take control - the act of taking control is
+            in itself empowering,Connect with people,Have some 'me time',Avoid
+            unhealthy habits,Help other people,Work smarter not harder,Try to be
+            positive,Accept the things you can't change]
+          </span>
+        ) : null}
+
+        {this.state.finals === "financial_problem" ? (
+          <span>
+            [keep your CV up to date and apply for new jobs , try to keep paying
+            the bills if it looks like you're going into debt get advice on how
+            to prioritise your debts.,Don't drink too much alcohol - alcohol
+            won't help you deal with your problems and could add to your
+            stress.,Don't lose your daily routine - If you lose your routine it
+            can also affect your eating: you may stop cooking or miss breakfast
+            because you're still in bed or eat snacks instead of having proper
+            meals.,Finding a new job,Staying healthy on a budget]
+          </span>
+        ) : null}
+
+        {this.state.finals == "loneliness" ? (
+          <span>[Discuss this with your General practitioners(GP)]</span>
+        ) : null}
       </div>
     );
   }

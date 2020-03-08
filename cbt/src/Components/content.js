@@ -21,8 +21,8 @@ export default class content extends Component {
       charts: [
         { serie: fossilFuelData, title: "Phobia" },
         { serie: hydroElectricData, title: "Anxiety" },
-        { serie: renewableEnergyData, title: "Addiction" },
-        { serie: biomassData, title: "Depression" }
+        { serie: renewableEnergyData, title: "Depression" },
+        { serie: biomassData, title: "Addiction" }
       ]
     });
   };
@@ -104,9 +104,7 @@ export default class content extends Component {
           </h1>
           <p className="text-center">
             Source:&nbsp;
-            <a href="https://www.eia.gov">
-              U.S. Energy Information Administration
-            </a>{" "}
+            <a href="#"></a>{" "}
           </p>
         </div>
         <div className="container  mb-5 pb-3 bg-light">
