@@ -2,139 +2,38 @@
   "intents": [
     {
       "classes": "phobia",
-      "questions": [
-        "What am I actually afraid of?",
-        "Am I afraid of the process or the result?",
-        "Do I feel that I can handle the process? Do I feel like I can handle the outcome?",
-        "Do I feel confident in my abilities to perform?",
-        "Do I feel that I have to perform and I don't want to?",
-        "Am I pressuring myself to make a decision quickly when I don't have enough information?",
-        "Is my sense of worth at stake in this moment? If so, why? Can I drop the question of worthiness?",
-        "Am I trying to protect myself from a particular outcome? If so, why? Am I actually not equipped to handle the outcome or do I just feel inadequate?",
-        "Can I read a book, take a class, do a Google search to feel more knowledgeable?",
-        "Do I know someone who has been in this position before who can provide detail around what currently feels abstract and scary? Would I be willing to ask them honest questions?",
-        "Am I scared that I may make a mistake? Am I allowed to make mistakes?",
-        "Am I scared of being wrong? Is my self worth tied to being right? If so, why? Can I allow myself to be wrong?",
-        "Am I scared of feeling a feeling, because the feeling is overwhelming?",
-        "Can I allow myself to feel an overwhelming feeling and know that it will pass?",
-        "Am I putting all my eggs in one basket and pressuring myself to succeed on the first attempt? Is there a way to diversify my efforts?",
-        "Am I scared of what another person might think of me?",
-        "If a person has a negative opinion of me, what impact will that actually have on my day to day life?",
-        "When was the last time I felt this fear? Will I be able to handle this situation differently than the last time I felt this specific fear?"
-      ],
-      "answers": [
-        "Talking treatments, such as counselling,are often very effective at treating phobias",
-        "CBT is a type of counselling that can help you manage your problems by changing the way you think and behave.",
-        "attend a self-help group",
-        "use exposure therapy to overcome your fear",
-        "exercise regularly",
-        "eating regular, healthy meals",
-        "get enough sleep",
-        "you can try relaxation techniques – a series of physical exercises that help you relax and control your breathing",
-        "you can try visualisation – combines relaxation and breathing techniques with mentally visualising how you'll successfully deal with a situation that could cause anxiety",
-        "I think the best treatment for is a form of psychotherapy called exposure therapy ",
-        "you should try exposure therapy will help to reduce specific phobia and the thoughts, feelings , and sensations may help you learn to manage your anxiety.",
-        "I prefer you should do deep breathing, progressive muscle relaxation or yoga , which may help you to cope up with anxiety and stress",
-        "you should do physical activity and exercise may be helpful in managing anxiety",
-        " I think you should get enough rest, eat healthily and try to be physically active every day"
-      ],
+      "questions": [""],
+      "answers": [],
       "custom_switch": ""
     },
     {
       "classes": "anxiety",
-      "questions": [
-        "Do you experience intense anxiety or worry and find it difficult to control?",
-        "Does worry or anxiety make you feel fatigued or irritable?",
-        "Does worry or anxiety interfere with your sleep or ability to concentrate?",
-        "Do you experience repetitive and persistent thoughts that are upsetting and unwanted?",
-        "Do you experience strong fear that causes panic, shortness of breath, chest pains, a pounding heart, sweating, shaking, nausea, dizziness, and/or fear of dying?",
-        "Do you ever avoid places or social situations for fear of this panic?",
-        "Do you ever engage in repetitive behaviors to manage your worry? (i.e. checking the oven is off, locking doors, washing hands, counting, repeating words)"
-      ],
-      "answers": [
-        "note how often you check your body, ask people for reassurance, or look at health information",
-        "You should practice yoga, listen to music, meditate, get a massage, or learn relaxation techniques",
-        "Keep Stepping back from the problem helps clear your head",
-        " I think you should do not skip any meals do keep healthful,energy-boosting snacks on hand",
-        "Please do exercise daily to help you feel good and maintain your health",
-        "you should Take deep breaths Inhale and exhale slowly",
-        " You should maintain a positive attitude Make an effort to replace negative thoughts with positive ones",
-        "Be patient when you start a new exercise program",
-        "Try to Distract yourself with an iPod or other portable media player and listen to music"
-      ],
+      "questions": [],
+      "answers": [],
       "custom_switch": ""
     },
     {
       "classes": "addiction",
-      "questions": [
-        "Have you ever taken drugs or alcohol to self-medicate?",
-        "ave you tried to stop using drugs or alcohol and failed?",
-        "Have you ever used more than one drug at a time?",
-        "Have you ever run out of a prescription before you should have?",
-        "Have you ever used someone else’s prescription medication?",
-        "Have you ever searched for doctors to get medication?",
-        "Are you becoming apathetic about previous interests?",
-        "Have you grown a tolerance, or needed more of the drug, to get high?",
-        "Do loved ones tell you that you have changed or become bitter?",
-        "Do you have an awkward sleep schedule as a result of using drugs or alcohol?",
-        "Do you operate heavy machinery while under the influence of drugs or alcohol?",
-        "Do you spend a majority of your day thinking about using drugs or alcohol?",
-        "Do you have trouble getting through the week without using drugs or alcohol?",
-        "Have you had to up your prescription medication dose to feel effects?",
-        "Have you ever experienced a blackout or short-term memory loss from using?",
-        "Do you feel shame or guilt from using drugs or alcohol?",
-        "Has your family ever said anything to you about your drug or alcohol use?",
-        "Have you ever experienced withdrawal symptoms when attempting to stop using drugs or alcohol?",
-        "Have you previously gotten help through treatment for drug or alcohol abuse?",
-        "Have you experienced medical issues brought on by drug or alcohol use?"
-      ],
-      "answers": [
-        "Take time to contact friends and family who will support you in your goals without being judgmental if times become hard and you slip up. ",
-        " it is a good idea to talk to your doctor or local drug clinic about whether you need medical help in quitting",
-        "Remind yourself of the reasons you want to change.",
-        "Think about your past attempts at recovery, if any. What worked? What didn’t?",
-        "Set specific, measurable goals, such as a start date or limits on your drug use.",
-        "Remove reminders of your addiction from your home, workplace, and other places you frequent",
-        "Tell friends and family that you’re committing to recovery, and ask for their support."
-      ],
+      "questions": [],
+      "answers": [],
       "custom_switch": ""
     },
     {
       "classes": "depression",
-      "questions": [
-        "Are you sleeping more or less than you normally do?",
-        "Are you eating more or less than you normally do?",
-        "Are you tasting your food when you eat?",
-        "Do you feel tired no matter how much you sleep?",
-        "Are you capable of enjoying things right now?",
-        "Is it hard for you to do personal grooming?",
-        "Are you having thoughts of your own death?",
-        "What helped the last time you were depressed like this?",
-        "What do we need to do as a team to get through this rotten downswing?",
-        "What’s the best way for me to help you?",
-        "How are you doing with your medications? Are you feeling any difference?",
-        "Who can we call to help us get through this tough time?",
-        "What do you need from me?",
-        "What changes can help you feel better right now?",
-        "Are you getting between 7 and 9 hours of sleep each night?",
-        "Are you eating well?",
-        "Are you experiencing physical symptoms like headaches, insomnia, or digestive issues?",
-        "Do you have people you can talk to who understand what you’re going through?"
-      ],
-      "answers": [
-        "control the negative thoughts that lead to loss of interest and feelings of worthlessness",
-        "build new friendships and improve your support network.",
-        "Look for support from people who make you feel safe and cared for.",
-        "While nothing can replace the human connection, pets can bring joy and companionship into your life and help you feel less isolated",
-        "Help someone else by volunteering",
-        "Have lunch or coffee with a friend",
-        "Accompany someone to the movies, a concert, or a small get-together",
-        "Call or email an old friend",
-        "Go for a walk with a workout buddy",
-        "Schedule a weekly dinner date",
-        "Meet new people by taking a class or joining a club",
-        "Confide in a clergy member, teacher, or sports coach"
-      ],
+      "questions": [],
+      "answers": [],
+      "custom_switch": ""
+    },
+    {
+      "classes": "phobia",
+      "questions": [],
+      "answers": [],
+      "custom_switch": ""
+    },
+    {
+      "classes": "misogynism",
+      "questions": [],
+      "answers": [],
       "custom_switch": ""
     }
   ]

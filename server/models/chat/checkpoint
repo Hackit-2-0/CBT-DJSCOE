@@ -1,2 +1,2 @@
-model_checkpoint_path: "C:\\Users\\Vedang Parasnis\\Desktop\\CBT-DJSCOE\\server\\models\\chat\\model.tflearn"
-all_model_checkpoint_paths: "C:\\Users\\Vedang Parasnis\\Desktop\\CBT-DJSCOE\\server\\models\\chat\\model.tflearn"
+model_checkpoint_path: "C:\\Users\\Vedang Parasnis\\Desktop\\CBT-DJSCOE\\server\\models\\chat\\dataflowModel.tflearn"
+all_model_checkpoint_paths: "C:\\Users\\Vedang Parasnis\\Desktop\\CBT-DJSCOE\\server\\models\\chat\\dataflowModel.tflearn"
