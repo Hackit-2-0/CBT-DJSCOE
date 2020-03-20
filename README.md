@@ -69,6 +69,10 @@ Based on the response for each question, user is suggested with tips that are no
 
 Node and python package required is present [Here](https://gist.github.com/hritik5102/7b5f5737de12605b0df665eec2fbed70)
 
+You can run and edit the algorithms or contribute to them using [Gitpod.io](https://www.gitpod.io/), a free online development environment, with a single click.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](http://gitpod.io/#https://github.com/Hackit-2-0/CBT-DJSCOE)
+
 ## Clone git repository
 
 ```sh
