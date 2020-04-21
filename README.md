@@ -139,8 +139,7 @@ Licensed under the [MIT License](LICENSE)
 |---------| ------------------  |
 | Vedang parasnis  | vedang.parasnis@somaiya.edu|
 | Priya mane  | priya.hm@somaiya.edu|
-| Pratik merchant  | pratik.merchant@somaiya.edu|
 | Hritik Jaiswal  | hritik.jaiswal@somaiya.edu|
 
-<h3 align="center"><b>Developed with :heart: by <a href="https://github.com/vedangparasnis">Vedang Parasnis </a> , <a href="https://github.com/pugnator-12"> Priya mane</a> , <a href="https://github.com/pratik6725">Pratik merchant</a> and <a href="https://github.com/hritik5102">Hritik jaiswal</a>.</b></h1>
+<h3 align="center"><b>Developed with :heart: by <a href="https://github.com/vedangparasnis">Vedang Parasnis </a> , <a href="https://github.com/pugnator-12"> Priya mane</a> and <a href="https://github.com/hritik5102">Hritik jaiswal</a>.</b></h1>
 
